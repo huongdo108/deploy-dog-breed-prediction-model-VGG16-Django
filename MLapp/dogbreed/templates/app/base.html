@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Dog Breed Classification</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'app/styles.css' %}" />
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <h1>Dog Breed Classification</h1>
+            <br />
+            <br />
+            {% block content %}
+            {% endblock %}
+
+            <br />
+            Full project on <a href="https://github.com/kHarshit/image-captioner">github</a>.
+            <br />
+            <br />
+            
+
+        </div>
+    </section>
+    <footer id="last_footer">
+            Copyright &copy; Huong Do 2020
+    </footer>
+</body>
+</html>

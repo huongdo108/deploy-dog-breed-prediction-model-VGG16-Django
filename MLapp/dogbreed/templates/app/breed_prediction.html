@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+
+    {% block content %}
+
+        <form method="post" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+{#                <input type="file" name="myimage"  />#}
+            <input type="submit" value="Upload" />
+        </form>
+
+    {% endblock %}

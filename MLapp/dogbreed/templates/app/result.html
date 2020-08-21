@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+
+    {% block content %}
+
+        {% if image_name %}
+            <!-- <em>Uploaded image:</em> {{ image_name_original }}<br /> -->
+            <img src="{{MEDIA_URL}}{{ image_name }}" /><br />
+            It is {{ output }}
+        {% endif %}
+        <br />
+
+    {% endblock %}
